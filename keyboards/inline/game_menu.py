@@ -11,7 +11,7 @@ all_games = InlineKeyboardMarkup(
             InlineKeyboardButton('Basketball🏀', callback_data='basketball')
         ],
         [
-            InlineKeyboardButton('🎰Slot_Machine', callback_data='slot_machine'),
+            InlineKeyboardButton('🎰Slot Machine', callback_data='slot_machine'),
             InlineKeyboardButton('Dart🎯', callback_data='dart')
         ]
     ]
