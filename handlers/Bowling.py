@@ -1,9 +1,10 @@
 from aiogram import types
 from state.basketgame import GameBasketState
 from aiogram.dispatcher import FSMContext
-from loader import dp
+from loader import dp, bot
 from keyboards.defualt.request_game import bowling
 import time
+from aiogram.types import ReplyKeyboardRemove
 
 
 @dp.callback_query_handler(text='bowling')
@@ -25,6 +26,7 @@ async def user(message: types.Message, state: FSMContext):
     user_data = message['dice']['value']
     async with state.proxy() as data:
         data['user_data'] = user_data
+    await bot.send_message(chat_id=message.chat.id, text="Нука посмотрим что у тебя там выйдет...😏", reply_markup=ReplyKeyboardRemove())
     time.sleep(4.59)
     if data['bot_data'] == data['user_data']:
         await message.answer('Поздравляю с ничьей!😎')
