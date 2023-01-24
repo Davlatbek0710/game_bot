@@ -1,3 +1,2 @@
-# TG.Bots
- Hello This is Telegram bot game. There you would have to run the app.py python file and by the way you have also have to update any API of telegram bot so it worked!
- Have blessing day!
+ Hi👋, You can play with this bot any games out of these! 🎳🎯🎰🎲⚽️🏀 choose only one emoji!.
+ type in search bar of telegram.exe https://t.me/h_bi_daybot and feel free to test this game!😎
